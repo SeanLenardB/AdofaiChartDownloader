@@ -70,7 +70,7 @@ internal class Program
             }
             
             
-            string fileName = $"[{chart.Level}] #{chart.Id}. {chart.Artist} - {chart.Name} [By {chart.Creator}].zip";
+            string fileName = $"[{chart.Level}] {chart.Id}. {chart.Artist} - {chart.Name} [By {chart.Creator}].zip";
             foreach (char ch in "\\/:*?\"<>|".ToCharArray())
             {
                 fileName = fileName.Replace(ch, '_');
