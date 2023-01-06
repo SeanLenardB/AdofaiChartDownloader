@@ -18,17 +18,17 @@ This app will not violate ADOFAI.gg's or ADOFAI's terms of use.
 
 ## 使用教程（文字版）
 
-运行出错请安装.Net运行时7.0
+运行闪退请安装.Net运行时7.0
 
 If the app flashes and crashes, install .NET runtime 7.0.
 
 1. 下载程序，并且打开管理员版ADOFAI.gg谱面excel（自己上discord找） Download the app and open the admin version of ADOFAI.gg forum sheet (find this in Discord yourself).
 
-**请使用`Maps by Diff`表，不要用`Maps by ID`！！！ Use `Maps by Diff` sheet instead of `Maps by ID`!!!
+[V1.0 Hotfix后不用][Not necessary after V1.0 Hotfix]**请使用`Maps by Diff`表，不要用`Maps by ID`！！！ Use `Maps by Diff` sheet instead of `Maps by ID`!!!
 
 2. 复制需要下载的谱面至本地，创建excel表格（`.xlsx`一定没问题, `.csv`，`.xls`应该也没问题），请复制全部列（`A`~`V`），否则无法下载。当然，如果你清楚的话，其实只有`A`、`B`、`C`、`D`、`E`、`S`列是必要的。 Copy and paste the charts you want to download to your computer, create an Excel file and save. (`.xlsx` will definitely work, `.csv`, `.xls` are supposed to work as well) Please copy all columns of the row (range `A` ~ `V`), otherwise the app may not work. In fact, the app will only read column `A`, `B`, `C`, `D`, `E`, `S`.
 
-3. 打开程序，按照程序要求输入对应参数。一般来说，只需要输入第2步存放的表格位置即可。 Open the app and do what it asks you to do. Generally you'll just need to input the file location of the Excel you created in 2.
+3. 先关闭表格，再打开程序，按照程序要求输入对应参数。一般来说，只需要输入第2步存放的表格位置即可。 First close the Excel, then open the app and do what it asks you to do. Generally you'll just need to input the file location of the Excel you created in 2.
 
 4. 如果你无法下载，请科学。 
 
