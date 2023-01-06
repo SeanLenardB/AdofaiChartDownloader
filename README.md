@@ -22,6 +22,8 @@ This app will not violate ADOFAI.gg's or ADOFAI's terms of use.
 
 If the app flashes and crashes, install .NET runtime 7.0.
 
+(https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=7.0.0&arch=x64&rid=win10-x64)
+
 1. 下载程序，并且打开管理员版ADOFAI.gg谱面excel（自己上discord找） Download the app and open the admin version of ADOFAI.gg forum sheet (find this in Discord yourself).
 
 [V1.0 Hotfix后不用][Not necessary after V1.0 Hotfix]**请使用`Maps by Diff`表，不要用`Maps by ID`！！！ Use `Maps by Diff` sheet instead of `Maps by ID`!!!
