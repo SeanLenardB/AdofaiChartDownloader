@@ -28,6 +28,8 @@ If the app flashes and crashes, install .NET runtime 7.0.
 
 2. 复制需要下载的谱面至本地，创建excel表格（`.xlsx`一定没问题, `.csv`，`.xls`应该也没问题），请复制全部列（`A`~`V`），否则无法下载。当然，如果你清楚的话，其实只有`A`、`B`、`C`、`D`、`E`、`S`列是必要的。 Copy and paste the charts you want to download to your computer, create an Excel file and save. (`.xlsx` will definitely work, `.csv`, `.xls` are supposed to work as well) Please copy all columns of the row (range `A` ~ `V`), otherwise the app may not work. In fact, the app will only read column `A`, `B`, `C`, `D`, `E`, `S`.
 
+** 不要包含表头（`ID`, `Song`, `Artist`那一列） Do not include the first row of the whole sheet (the one that has `ID`, `Song`, `Artist`).
+
 3. 先关闭表格，再打开程序，按照程序要求输入对应参数。一般来说，只需要输入第2步存放的表格位置即可。 First close the Excel, then open the app and do what it asks you to do. Generally you'll just need to input the file location of the Excel you created in 2.
 
 4. 如果你无法下载，请科学。 
