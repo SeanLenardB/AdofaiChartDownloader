@@ -8,7 +8,7 @@ namespace AdofaiChartDownloader
 {
     internal class AdofaiChart
 	{
-        public AdofaiChart(int id, string name, string creator, string artist, string url, float level)
+        public AdofaiChart(int id, string name, string creator, string artist, string url, string level)
         {
             Id = id;
             Name = name ?? throw new ArgumentNullException(nameof(name));
@@ -60,9 +60,9 @@ namespace AdofaiChartDownloader
 			set { _url = value; }
 		}
 
-		private float _level = .0f;
+		private string _level = "?";
 
-        public float Level
+        public string Level
 		{
 			get { return _level; }
 			set { _level = value; }

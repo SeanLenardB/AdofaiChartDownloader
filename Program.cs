@@ -135,7 +135,7 @@ internal class Program
                     dataReader.GetValue(4).ToString()!, 
                     dataReader.GetValue(2).ToString()!, 
                     dataReader.GetValue(18).ToString()!, 
-                    (float)dataReader.GetDouble(3)));
+                    dataReader.GetValue(3).ToString()!));
             }
             
             return charts;
