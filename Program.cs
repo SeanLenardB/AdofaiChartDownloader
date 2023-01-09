@@ -128,14 +128,24 @@ internal class Program
         using (IExcelDataReader dataReader = ExcelReaderFactory.CreateReader(File.Open(excelLocation, FileMode.Open), new() { FallbackEncoding = Encoding.UTF8 }))
         {
             List<AdofaiChart> charts = new();
+            int i = 0;
             while (dataReader.Read())
             {
-                charts.Add(new((int)dataReader.GetDouble(0), 
-                    dataReader.GetValue(1).ToString()!, 
-                    dataReader.GetValue(4).ToString()!, 
-                    dataReader.GetValue(2).ToString()!, 
-                    dataReader.GetValue(18).ToString()!, 
+                i++;
+                try
+                {
+                    charts.Add(new((int)dataReader.GetDouble(0),
+                    dataReader.GetValue(1).ToString()!,
+                    dataReader.GetValue(4).ToString()!,
+                    dataReader.GetValue(2).ToString()!,
+                    dataReader.GetValue(18).ToString()!,
                     dataReader.GetValue(3).ToString()!));
+                }
+                catch {
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.WriteLine($"Error in parsing line #{i}");
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                }
             }
             
             return charts;
