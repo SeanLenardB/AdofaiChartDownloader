@@ -41,3 +41,25 @@ If the app flashes and crashes, install .NET runtime 7.0.
 *如果出现其他错误，或有问题，请使用github的功能自行提交。
 
 *If you encounter other issues, use github to submit them.
+
+## 特别说明 I want to highlight these
+
+*如果下载出现大量的紫色字，说明你被Google Drive屏蔽了，稍作等待即可。
+
+*If you encounter lots of purple(magenta) text while using the software to download charts, it usually indicates that your ip is temporarily forbidden by Google Drive and that can be solved by waiting for a couple of time.
+
+↑ The issue above is caused by my programming. In the programme I used a google drive download link that does not require logging in to the drive. And of course, if Google server received frequent ANONYMOUS download requests from the same ip, it will forbid that ip temporarily. However, this will not affect the case where you download charts from google drive using a web browser, because in that case, you'll be downloading the charts in the name of your account, and that's not like the requests made by the programme. I personally didn't want to dive into Google's token algorithms, due to two reasons:
+
+1, I'm personally too lazy to read their docs, and that's because I've tried, but no success.
+
+2, The software was originally planned to share with my bros in China, where some of the people can't register Google Drive accounts. Therefore if I implement logging in feature, many of the people will become frustrated because they don't even have one to log in.
+
+That being said, I would be happy if someone can fix this problem (right now without logging in Google accounts, the downloader can only be at about 5 second/chart, but once it's upgraded with that feature, multi-threading can help improve the download speed, at about 1 second/chart, or even faster). If that feature is implemented sometime in the future, I'll probably make two releases, with one without login, and the other with login.
+
+*如果下载出现红色字“WTF is that link?”，说明该谱面应该被定级为-2（通常情况）。当然，也有可能是我编程没有想到所有google drive的链接形式。所以，确保你去Errors.txt瞅一眼那些链接，自己访问一下看看是不是直链。如果是，请提交issues。
+
+*If you encounter lots of red text saying "WTF is that link?" while using the software to download charts, it generally implies that EITHER the link is not a direct link (for example the link is directing us to a google drive folder), OR the link is just broken (getting 404 requests). In both cases, the chart should be (in my understanding of censorship criteria) marked -2. BUT, there's also possibilities where I'm just forgetting a new type of google drive link, therefore make sure to check Errors.txt and see whether the link is really broken / not direct link, or is just a bug. If it's a bug, please submit an issue.
+
+↑ This is because my approach to google drive links is by first getting the file id, then download with a specific link (which can be found in my programme). However, google drive links are so interesting that getting the file id is hard. There's at least 3 types of google drive links (as far as I know).
+
+If there's any better ways to get the file id, please submit a pull request.
